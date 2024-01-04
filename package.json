@@ -1,5 +1,5 @@
 {
-    "name": "mbgl-renderer",
+    "name": "mrgl-renderer",
     "version": "0.8.0",
     "description": "Static Map Renderer using Mapbox GL",
     "main": "dist/index.js",
