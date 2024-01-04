@@ -48,5 +48,5 @@
         "jest-fixtures": "^0.6.0",
         "pixelmatch": "^5.2.1"
     },
-    "repository": "https://github.com/consbio/mbgl-renderer"
+    "repository": "https://github.com/abhinay-podugu/mbgl-renderer"
 }
