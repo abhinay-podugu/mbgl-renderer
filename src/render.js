@@ -317,6 +317,20 @@ const getRemoteTile = (url, callback) => {
                     logger.warn(`Missing tile at: ${url}`)
                     return callback(null, {})
                 }
+                case 403: {
+                    // Tile not found
+                    // this may be valid for some tilesets that have partial coverage
+                    // on servers that do not return blank tiles in these areas.
+                    logger.warn(`Missing tile at: ${url}`)
+                    return callback(null, {})
+                }
+                case 400: {
+                    // Tile not found
+                    // this may be valid for some tilesets that have partial coverage
+                    // on servers that do not return blank tiles in these areas.
+                    logger.warn(`Missing tile at: ${url}`)
+                    return callback(null, {})
+                }
                 default: {
                     // assume error
                     const msg = `request for remote tile failed: ${url} (status: ${res.statusCode})`
